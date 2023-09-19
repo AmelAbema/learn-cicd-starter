@@ -79,7 +79,7 @@ func main() {
 		defer func(f fs.File) {
 			err := f.Close()
 			if err != nil {
-
+				log.Println("error")
 			}
 		}(f)
 		if _, err := io.Copy(w, f); err != nil {
