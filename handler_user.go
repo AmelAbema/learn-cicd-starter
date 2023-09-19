@@ -65,6 +65,6 @@ func generateRandomSHA256Hash() (string, error) {
 	return hashString, nil
 }
 
-func (cfg *apiConfig) handlerUsersGet(w http.ResponseWriter, r *http.Request, user database.User) {
+func (cfg *apiConfig) handlerUsersGet(w http.ResponseWriter, _ *http.Request, user database.User) {
 	respondWithJSON(w, http.StatusOK, databaseUserToUser(user))
 }
