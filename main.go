@@ -67,7 +67,7 @@ func main() {
 		AllowCredentials: false,
 		MaxAge:           300,
 	}))
-
+	//
 	router.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		f, err := staticFiles.Open("static/index.html")
 		if err != nil {
