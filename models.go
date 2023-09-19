@@ -24,6 +24,7 @@ func databaseUserToUser(user database.User) User {
 	}
 }
 
+
 type Note struct {
 	ID        string    `json:"id"`
 	CreatedAt time.Time `json:"created_at"`
